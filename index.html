@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background: #555;
-  max-width: 100%;
-  margin: auto;
-}
+  <head>
+    <title>SNO-Covid-Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background: black;
+      }
 
-.content {
-  max-width: 100%;
-  margin: auto;
-  background: black;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-</style>
-</head>
-<body>
+      h1 {
+        color: white;
+        text-align: center;
+      }
 
-<div class="content">
+      .dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
 
-<head>
-  <title>SNO-Covid-Dashboard</title>
+      .dashboard iframe {
+        width: 80%;
+        height: 1050px;
+      }
+    </style>
+  </head>
   <body>
     <h1>สถานการณ์โควิดจังหวัดสกลนคร</h1>
-    <iframe width="600" height="1050" src="https://datastudio.google.com/embed/reporting/58a2dcfd-05d0-487b-be04-97fd9b0fd85c/page/6FJIC" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="dashboard">
+      <iframe
+        src="https://datastudio.google.com/embed/reporting/58a2dcfd-05d0-487b-be04-97fd9b0fd85c/page/6FJIC"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen
+      ></iframe>
+    </div>
   </body>
-
-</div>
-
-</body>
 </html>
